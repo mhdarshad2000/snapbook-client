@@ -1,0 +1,46 @@
+.storyBox{
+    position:absolute;
+    top: 25vh;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--shadow-1);
+    background: var(--bg-primary);
+    .box_header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .box_profile{
+        display: flex;
+        align-items: center;
+    }
+}
+.storyImgIcon{
+    position: relative;
+    right: 250px;
+}
+.preview{
+    width: 90%;
+    object-fit: cover;
+}
+.update_wrap_story{
+    display: flex;
+    justify-content: center;
+}
+.story_error{
+    position: absolute !important;
+    top: 10 !important;
+    left: 40vw !important;
+}
+.story_view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 125px;
+}
+.add_story{
+    z-index: 99;
+}
+.share_story{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,8 @@
+.suggestion_wrap{
+    @media (max-width:1320px) {
+        width:340px;
+    }
+    @media (max-width:1270px){
+        display: none;
+    }
+}

@@ -1,0 +1,37 @@
+.sidebar{
+    color: white;
+    height: 100vh !important;
+}
+.menu{
+    margin-top: 100px;
+    li{
+        font-size: 15px;
+        margin: 5px;
+       :hover{
+       background-color:#5e6ec9 ;
+       
+   }
+}
+@media (max-width:890px) {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 80px;
+ color: white;
+}
+@media (max-width:400px) {
+    width: 60px;
+}
+}
+.flex_sidebar{
+    display: flex;
+    align-items: center;
+    .span{
+        
+        margin-left: 5px;
+    }
+}
+.menu-label{
+    display: flex;
+    align-items: center;
+}

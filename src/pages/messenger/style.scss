@@ -1,0 +1,116 @@
+.chatMenu{
+    flex: 3.5;
+}
+.chatBox{
+    flex: 5.5; 
+}
+.chatOnline{
+    flex: 3.5;
+}
+.chatMenu_wrapper, .chatOnline_wrapper, .chatBox_wrapper{
+    padding: 10px;
+}
+.conversation{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+
+    .conversation_img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 20px;
+    }
+    .conversation_name{
+        font-weight: 500;
+    }
+    
+}
+.message{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.message_top{
+    display: flex;
+    img{
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 10px;
+    }
+}
+.message_text{
+    padding: 10px;
+    background-color: #1877f2;
+    border-radius: 20px;
+    color: white;
+    max-width: 300px;
+}
+.message_bottom{
+    font-size: 12px;
+    margin-top: 10px;
+}
+.message.own{
+    align-items: flex-end;
+    .message_text{
+        background-color: rgba(245, 241, 241);
+        color: black;
+    }
+}
+.chatBox_bottom{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.chatBox_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.chatBox_top{
+    height: 70vh;
+    padding-right: 10px;
+    overflow-y: scroll;
+}
+.chat_online_friend{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.chat_onlineImg_container{
+    position: relative;
+    margin-right: 10px;
+    img{
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 1px solid white;
+    }
+}
+.chat_online_badge{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: limegreen;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+.no_conversation_text{
+    display: flex;
+    height: 70vh;
+    font-weight: 500;
+    color: rgb(209, 209, 209);
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    cursor:default;
+}

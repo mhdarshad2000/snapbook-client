@@ -1,0 +1,5 @@
+.admin_sub_header{
+    display: flex;
+    justify-content: center;
+    color: var(--color-secondary);
+}

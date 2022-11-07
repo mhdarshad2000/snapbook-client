@@ -1,0 +1,33 @@
+
+.reg_dob_select select{
+    border-radius: 5px;
+    border: 2px solid var(--bg-third);
+    padding: 5px 10px 5px;
+    margin: 10px;
+    width: 25%;
+    color: var(--color-primary);
+    font-size: 15px;
+    background: var(--bg-white)
+}
+.reg_label{
+    color: var(--color-secondary);
+}
+.reg_gender_group{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid var(--bg-third);
+    padding: 5px 10px 5px;
+    border-radius: 7px;
+}
+.reg_radio{
+    justify-content: space-around;
+    display: flex;
+    padding: 5px 10px 5px;
+}
+.reg_radio input{
+    margin-left: 5px;
+}
+.err_signup{
+    margin-top: 3px;
+    margin-left: 5px;
+}
