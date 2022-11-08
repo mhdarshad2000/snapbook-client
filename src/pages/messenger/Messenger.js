@@ -26,7 +26,7 @@ export default function Messenger() {
   const socket = useRef();
 
   useEffect(() => {
-    socket.current = io("https://zany-ruby-foal-yoke.cyclic.app ");
+    socket.current = io("https://zany-ruby-foal-yoke.cyclic.app");
     socket.current.on("getMessage", (data) => {
       setArrivalMessage({
         sender: data.senderId,
