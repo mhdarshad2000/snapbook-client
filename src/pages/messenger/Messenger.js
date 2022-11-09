@@ -54,8 +54,8 @@ export default function Messenger() {
   }, [user.id]);
   const getConversations = async () => {
     try {
-      const res = await Axios.get(`/getConversation/${user.id}`);
-      setConversation(res.data);
+      const {data} = await Axios.get(`/getConversation/${user.id}`);
+      setConversation(data);
     } catch (error) {
       console.log(error.message);
     }
@@ -69,8 +69,8 @@ export default function Messenger() {
   }, [messages]);
   const getMessages = async () => {
     try {
-      const res = await Axios.get(`/getMessage/${currentChat?._id}`);
-      setMessages(res.data);
+      const {data} = await Axios.get(`/getMessage/${currentChat?._id}`);
+      setMessages(data);
     } catch (error) {
       console.log(error.message);
     }
