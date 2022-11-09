@@ -44,6 +44,7 @@ header{
     padding: 10px 32px 10px 10px;
     border-radius: 50px;
     cursor: text;
+    height: 39px;
 }
 .search_bg{
     display: none;
@@ -54,7 +55,7 @@ header{
     background: transparent;
     font-size: 15px;
     font-family: inherit;
-    height: fit-content;
+    height: ;
 }
 .search input::placeholder{
     transform: translate(-1px);
