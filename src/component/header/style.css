@@ -54,6 +54,7 @@ header{
     background: transparent;
     font-size: 15px;
     font-family: inherit;
+    height: fit-content;
 }
 .search input::placeholder{
     transform: translate(-1px);
