@@ -44,6 +44,7 @@ export default function Messenger() {
   useEffect(() => {
     socket.current.emit("addUser", user.id);
     socket.current.on("getUsers", (users) => {
+      console.log(users);
       setOnlineUsers(
         user.friends.filter((f) => users.some((u) => u.userId === f))
       );
