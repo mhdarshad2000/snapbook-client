@@ -91,3 +91,47 @@ export const SuggestionBox = styled.div`
     gap: 2px;
   }
 `;
+export const MessengerBox = styled.div`
+  width: ${(props) => props.w || "none"};
+  height: ${(props) => props.h || "none"};
+  background-color: ${(props) => props.bg || "var(--bg-secondary)"};
+  display: flex;
+  justify-content: ${(props) => props.jc || "space-between"};
+  flex: ${(props) => props.flex || "none"};
+  flex-direction: ${(props) => props.fd || "row"};
+  position: ${(props) => props.position || "none"};
+  @media (max-width: 1024px) {
+    display: ${(props) => props.display || ""};
+    flex-direction: ${(props) => props.wrap || ""};
+    justify-content: ${(props) => props.smallJustify || ""};
+  }
+`;
+
+export const ChatInput = styled.input`
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border-bottom: 1px solid var(--shadow-1);
+  padding-left: 20px;
+`;
+
+export const TextMessage = styled.input`
+  max-width: 90%;
+  min-width: 90%;
+  max-height: 50px;
+  min-height: 50px;
+  border: 1px solid var(--shadow-1);
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  @media (max-width: 1400px) {
+    max-width: 80%;
+    min-width: 80%;
+  }
+  @media (max-width: 1024px) {
+    max-height: 40px;
+    min-height: 40px;
+    padding: 6px;
+    font-size: 18px;
+  }
+`;

@@ -8,12 +8,12 @@ export default function ChatOnline({ onlineUsers, user, setCurrentChat }) {
     getFriends();
   }, [user]);
   const getFriends = async () => {
-    const { data } = await Axios.get("/getFriends", {
+    const res = await Axios.get("/getFriends", {
       headers: {
         Authorization: `Bearer ${user.token}`,
       },
     });
-    setFriends(data.friends);
+    setFriends(res.data.friends);
   };
   useEffect(() => {
     setOnlineFriends(friends.filter((f) => onlineUsers.includes(f._id)));
@@ -25,10 +25,33 @@ export default function ChatOnline({ onlineUsers, user, setCurrentChat }) {
         headers: { Authorization: `Bearer ${user.token}` },
       });
       setCurrentChat(res.data);
+      if (res.data === null) {
+        createConversation(userId)
+      }
     } catch (error) {
       console.log(error.message);
     }
   };
+
+  const createConversation = async (userId) => {
+    try {
+      const { data } = await Axios.post(
+        "/newConversation",
+        {
+          senderId: user.id,
+          recieverId: userId._id,
+        },
+        {
+          headers: {
+            Authorization: `Bearer ${user.token}`,
+          },
+        }
+      );
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+
   return (
     <div className="chat_online">
       {onlineFriends &&
