@@ -26,7 +26,7 @@ export default function Messenger() {
   const socket = useRef();
 
   useEffect(() => {
-    socket.current = io(8900);
+    socket.current = io("8900");
     socket.current.on("getMessage", (data) => {
       setArrivalMessage({
         sender: data.senderId,
@@ -69,7 +69,7 @@ export default function Messenger() {
   }, [messages]);
   const getMessages = async () => {
     try {
-      const res = await Axios.get(`/getMessage/${currentChat._id}`);
+      const res = await Axios.get(`/getMessage/${currentChat?._id}`);
       setMessages(res.data);
     } catch (error) {
       console.log(error.message);
