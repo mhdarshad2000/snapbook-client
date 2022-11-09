@@ -43,7 +43,7 @@ export default function CreatePostPopup({ user, setVisible, posts, dispatch }) {
       }
     } else if (images && images.length) {
       setLoading(true);
-      const postImages = images?.map((image) => {
+      const postImages = images.map((image) => {
         return dataURItoBlob(image);
       });
       const path = `${user.username}/post_images`;
