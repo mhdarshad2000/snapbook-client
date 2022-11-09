@@ -49,13 +49,14 @@ export default function Messenger() {
       );
     });
   }, []);
+  console.log(onlineUsers);
   useEffect(() => {
     getConversations();
   }, [user.id]);
   const getConversations = async () => {
     try {
       const { data } = await Axios.get(`/getConversation/${user.id}`);
-      console.log(data)
+      console.log(data);
       setConversation(data);
     } catch (error) {
       console.log(error.message);

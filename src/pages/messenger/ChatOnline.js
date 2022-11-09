@@ -13,7 +13,6 @@ export default function ChatOnline({ onlineUsers, user, setCurrentChat }) {
         Authorization: `Bearer ${user.token}`,
       },
     });
-    console.log(data);
     setFriends(data.friends);
   };
   useEffect(() => {
