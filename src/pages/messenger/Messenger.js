@@ -55,6 +55,7 @@ export default function Messenger() {
   const getConversations = async () => {
     try {
       const { data } = await Axios.get(`/getConversation/${user.id}`);
+      console.log(data);
       setConversation(data);
     } catch (error) {
       console.log(error.message);
@@ -101,7 +102,6 @@ export default function Messenger() {
     }
   };
   console.log(conversations);
-
   return (
     <Fragment>
       <Header page="messenger" />
