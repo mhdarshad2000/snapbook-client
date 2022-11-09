@@ -21,7 +21,7 @@ export default function Messenger() {
   const [newMessage, setNewMessage] = useState("");
   const [arrivalMessage, setArrivalMessage] = useState(null);
   const [onlineUsers, setOnlineUsers] = useState([]);
-  const { user } = useSelector((state) => ({ ...state }));
+  const { user } = useSelector((user) => ({ ...user }));
   const scrollRef = useRef(null);
   const socket = useRef();
 
@@ -54,7 +54,7 @@ export default function Messenger() {
   }, [user.id]);
   const getConversations = async () => {
     try {
-      const {data} = await Axios.get(`/getConversation/${user.id}`);
+      const { data } = await Axios.get(`/getConversation/${user.id}`);
       setConversation(data);
     } catch (error) {
       console.log(error.message);
@@ -69,7 +69,7 @@ export default function Messenger() {
   }, [messages]);
   const getMessages = async () => {
     try {
-      const {data} = await Axios.get(`/getMessage/${currentChat?._id}`);
+      const data = await Axios.get(`/getMessage/${currentChat?._id}`);
       setMessages(data);
     } catch (error) {
       console.log(error.message);
@@ -100,6 +100,7 @@ export default function Messenger() {
       console.log(error);
     }
   };
+  console.log(conversations);
 
   return (
     <Fragment>
