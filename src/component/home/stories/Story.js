@@ -27,331 +27,104 @@ export default function Story() {
     }
   };
   return (
-    <>
-      <Grid container>
-        <Grid item xs={12}>
-          <Box sx={{ display: "flex", gap: "5px" }}>
-            <Box
+    <Box className="story_wrap">
+      <Box sx={{ display: "flex", gap: "5px" }}>
+        <Box
+          className="box_story_main"
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <StoryRound>
+            <Avatar
+              src={user.picture}
               sx={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
+                width: { lg: "103px", xs: "71px" },
+                height: { lg: "103px", xs: "71px" },
+                objectFit: "cover",
               }}
-            >
-              <StoryRound>
-                <Avatar
-                  src={user.picture}
-                  sx={{
-                    width: "103px",
-                    height: "103px",
-                    objectFit: "cover",
-                  }}
-                  onClick={() => {
-                    setStory(true);
-                  }}
-                />
-              </StoryRound>
-              <FocusedText m={"-10px 0 5px 0"}>My Stories</FocusedText>
-            </Box>
-            {/*  */}
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
+              onClick={() => {
+                setStory(true);
               }}
-            >
-              <StoryRound>
-                <Avatar
-                  src={user.picture}
-                  sx={{
-                    width: "103px",
-                    height: "103px",
-                    objectFit: "cover",
-                  }}
-                  onClick={() => {
-                    setStory(true);
-                  }}
-                />
-              </StoryRound>
-              <FocusedText m={"-10px 0 5px 0"}>My Stories</FocusedText>
-            </Box><Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <StoryRound>
-                <Avatar
-                  src={user.picture}
-                  sx={{
-                    width: "103px",
-                    height: "103px",
-                    objectFit: "cover",
-                  }}
-                  onClick={() => {
-                    setStory(true);
-                  }}
-                />
-              </StoryRound>
-              <FocusedText m={"-10px 0 5px 0"}>My Stories</FocusedText>
-            </Box><Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <StoryRound>
-                <Avatar
-                  src={user.picture}
-                  sx={{
-                    width: "103px",
-                    height: "103px",
-                    objectFit: "cover",
-                  }}
-                  onClick={() => {
-                    setStory(true);
-                  }}
-                />
-              </StoryRound>
-              <FocusedText m={"-10px 0 5px 0"}>My Stories</FocusedText>
-            </Box><Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <StoryRound>
-                <Avatar
-                  src={user.picture}
-                  sx={{
-                    width: "103px",
-                    height: "103px",
-                    objectFit: "cover",
-                  }}
-                  onClick={() => {
-                    setStory(true);
-                  }}
-                />
-              </StoryRound>
-              <FocusedText m={"-10px 0 5px 0"}>My Stories</FocusedText>
-            </Box><Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <StoryRound>
-                <Avatar
-                  src={user.picture}
-                  sx={{
-                    width: "103px",
-                    height: "103px",
-                    objectFit: "cover",
-                  }}
-                  onClick={() => {
-                    setStory(true);
-                  }}
-                />
-              </StoryRound>
-              <FocusedText m={"-10px 0 5px 0"}>My Stories</FocusedText>
-            </Box><Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <StoryRound>
-                <Avatar
-                  src={user.picture}
-                  sx={{
-                    width: "103px",
-                    height: "103px",
-                    objectFit: "cover",
-                  }}
-                  onClick={() => {
-                    setStory(true);
-                  }}
-                />
-              </StoryRound>
-              <FocusedText m={"-10px 0 5px 0"}>My Stories</FocusedText>
-            </Box><Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <StoryRound>
-                <Avatar
-                  src={user.picture}
-                  sx={{
-                    width: "103px",
-                    height: "103px",
-                    objectFit: "cover",
-                  }}
-                  onClick={() => {
-                    setStory(true);
-                  }}
-                />
-              </StoryRound>
-              <FocusedText m={"-10px 0 5px 0"}>My Stories</FocusedText>
-            </Box><Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <StoryRound>
-                <Avatar
-                  src={user.picture}
-                  sx={{
-                    width: "103px",
-                    height: "103px",
-                    objectFit: "cover",
-                  }}
-                  onClick={() => {
-                    setStory(true);
-                  }}
-                />
-              </StoryRound>
-              <FocusedText m={"-10px 0 5px 0"}>My Stories</FocusedText>
-            </Box><Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <StoryRound>
-                <Avatar
-                  src={user.picture}
-                  sx={{
-                    width: "103px",
-                    height: "103px",
-                    objectFit: "cover",
-                  }}
-                  onClick={() => {
-                    setStory(true);
-                  }}
-                />
-              </StoryRound>
-              <FocusedText m={"-10px 0 5px 0"}>My Stories</FocusedText>
-            </Box><Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <StoryRound>
-                <Avatar
-                  src={user.picture}
-                  sx={{
-                    width: "103px",
-                    height: "103px",
-                    objectFit: "cover",
-                  }}
-                  onClick={() => {
-                    setStory(true);
-                  }}
-                />
-              </StoryRound>
-              <FocusedText m={"-10px 0 5px 0"}>My Stories</FocusedText>
-            </Box>
-
-            {/*  */}
-            {stories.length
-              ? stories.map((story, i) => (
-                  <Box
+            />
+          </StoryRound>
+          <FocusedText m={"-10px 0 5px 0"}>My Stories</FocusedText>
+        </Box>
+        {stories.length
+          ? stories.map((story, i) => (
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <StoryRound border={"3px solid #16a112"} key={i}>
+                  <Avatar
+                    src={story[0]?.user?.picture}
                     sx={{
-                      display: "flex",
-                      flexDirection: "column",
-                      justifyContent: "center",
-                      alignItems: "center",
+                      width: { xl: "103px", xs: "71px" },
+                      height: { xl: "103px", xs: "71px" },
+                      objectFit: "cover",
                     }}
-                  >
-                    <StoryRound border={"3px solid #16a112"} key={i}>
-                      <Avatar
-                        src={story[0]?.user?.picture}
-                        sx={{
-                          width: "103px",
-                          height: "103px",
-                          objectFit: "cover",
-                        }}
-                        onClick={() => {
-                          setShowStory(true);
-                          setSingleStory(story);
-                        }}
-                      />
-                    </StoryRound>
-                    <FocusedText m={"-10px 0 5px 0"}>
-                      {story[0]?.user?.first_name} {story[0]?.user?.last_name}
-                    </FocusedText>
-                  </Box>
-                ))
-              : ""}
-          </Box>
-          {story && <AddStory user={user} setStory={setStory} />}
-          {showStory ? (
-            <ShowStory
-              story={singleStory}
-              setShowStory={setShowStory}
-              stories={stories}
-              setStories={setStories}
-            />
-          ) : (
-            ""
-          )}
-          {showStory ? (
-            <ShowStory
-              story={singleStory}
-              setShowStory={setShowStory}
-              stories={stories}
-              setStories={setStories}
-            />
-          ) : (
-            ""
-          )}
-          {showStory ? (
-            <ShowStory
-              story={singleStory}
-              setShowStory={setShowStory}
-              stories={stories}
-              setStories={setStories}
-            />
-          ) : (
-            ""
-          )}
-          {showStory ? (
-            <ShowStory
-              story={singleStory}
-              setShowStory={setShowStory}
-              stories={stories}
-              setStories={setStories}
-            />
-          ) : (
-            ""
-          )}
-        </Grid>
-      </Grid>
-    </>
+                    onClick={() => {
+                      setShowStory(true);
+                      setSingleStory(story);
+                    }}
+                  />
+                </StoryRound>
+                <FocusedText m={"-10px 0 5px 0"}>
+                  {story[0]?.user?.first_name} {story[0]?.user?.last_name}
+                </FocusedText>
+              </Box>
+            ))
+          : ""}
+      </Box>
+      {story && <AddStory user={user} setStory={setStory} />}
+      {showStory ? (
+        <ShowStory
+          story={singleStory}
+          setShowStory={setShowStory}
+          stories={stories}
+          setStories={setStories}
+        />
+      ) : (
+        ""
+      )}
+      {showStory ? (
+        <ShowStory
+          story={singleStory}
+          setShowStory={setShowStory}
+          stories={stories}
+          setStories={setStories}
+        />
+      ) : (
+        ""
+      )}
+      {showStory ? (
+        <ShowStory
+          story={singleStory}
+          setShowStory={setShowStory}
+          stories={stories}
+          setStories={setStories}
+        />
+      ) : (
+        ""
+      )}
+      {showStory ? (
+        <ShowStory
+          story={singleStory}
+          setShowStory={setShowStory}
+          stories={stories}
+          setStories={setStories}
+        />
+      ) : (
+        ""
+      )}
+    </Box>
   );
 }
